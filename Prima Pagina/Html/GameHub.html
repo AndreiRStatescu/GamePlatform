@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="Cart,GameHub.html">
+<link rel="stylesheet" type="text/css" href="searchbar.css">
 <style>
 .btn {
   background-color: DodgerBlue;
@@ -18,8 +19,24 @@
   background-color: RoyalBlue;
 }.
 </style>
+
+
 </head>
+
 <body>
+  <form autocomplete="off" action="/action_page.php">
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="myCountry" placeholder="Games">
+  </div>
+  <input type="submit">
+</form>
+
+<script src="it project.js"></script>
+
+<script>
+  var countries = ["Pokemon Eclipse","Barbut","Triviador"];
+autocomplete(document.getElementById("myInput"), countries);
+</script>
 
 <a href="Cart.html"> <button class="btn" align="right"><i class=" fa-cart"></i> Cart  </a> </button>
 
