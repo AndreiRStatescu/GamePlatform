@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type"text/css" href="PageDesign.css">
+<link rel="stylesheet" type"text/css" href="stylePage.css">
+<title>Think and Guess</title>
+</head>
+
+<body bgcolor="#dfe3ee">
+
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a href="#contact">Profile</a>
+  <a href="#Quiz - Games">Quiz about Games </a>
+<div class="topnav-right">
+
+  <a href="#about">Logout</a>
+  
+</div>  
+  
+</div>
+
+<div class="font">
+
+
+
+<centeR>
+
+<marquee behavior="alternate" direction="up" width="90%">
+
+	<marquee direction="right" behavior="alternate" style="font-size:40px">Think and Guess</marquee>
+	
+</marquee>
+
+</center>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<center>
+
+<button type="button" id="Raspuns" onclick="OpenGame()" class="btn btn-danger">Start Game</button>
+
+
+</center>
+
+<br>
+
+
+
+<div id="OpenDiv" class="profile-card">
+
+	     <div class="image-container">
+		      
+			<div class="title">
+		
+<br>
+		
+<center>
+            <p id="Game" onclick="Game()">Question</p>
+			
+				 <p id="GameContent"></p>
+			
+			<div class="Game-Start"></div>
+</center>
+
+<center>
+            <p id="Game1" onclick="Game1()">Question</p>	
+			
+			<p id="GameContent1"></p>
+</center>	
+
+<center>
+            <p id="Game2" onclick="Game2()">Question</p>	
+			
+			<p id="GameContent2"></p>
+</center>			  
+				  
+				  
+		    </div>
+
+
+
+         </div>
+</div>
+
+<br>
+
+<center>
+
+<button type="button" id="Level2" onclick="OpenGame1()" class="btn btn-danger">Level 2</button>
+
+
+</center>
+
+<br>
+
+<div id="OpenDiv1" class="profile-card">
+
+	     <div class="image-container">
+		      
+		<div class="title">
+		
+<br>	
+	
+<center>
+            <p id="Game3" onclick="Game3()">Question</p>	
+			
+			<p id="GameContent3"></p>
+</center>
+
+<center>
+            <p id="Game4" onclick="Game4()">Question</p>
+
+            <p id="GameContent4"></p>			
+</center>	
+
+<center>
+            <p id="Game5" onclick="Game5()">Question</p>	
+			
+			<p id="GameContent5"></p>
+</center>			  
+				  
+				  
+		    </div>
+
+
+
+         </div>
+</div>
+
+
+<center><button type="button" onclick="check1()" class="btn btn-danger">Finish the Test</button></center>
+
+<br>
+
+<div id = "after_submit">
+<center><p id="number_correct"></p></center>
+</div>
+
+
+<br>
+
+<center><button type="button" id="Confirm" onclick="OpenLevel2();" class="btn btn-warning">Confirm</button></center>
+
+<input type="radio" name="Variants" value="2012" />
+<input type="radio" name="Variants" value="2012" checked="checked" />
+<input type="radio" name="Variants" value="2012" />
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="Game.js"></script>
+</body>
+</html>
